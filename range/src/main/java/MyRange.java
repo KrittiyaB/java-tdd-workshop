@@ -12,7 +12,7 @@ public class MyRange {
     }
 
     public int getFirstNumber(String input) {
-        return 0;
+        return Character.getNumericValue(input.charAt(1));
     }
 
     public boolean isก้ามปูเปิด(String input) {

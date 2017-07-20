@@ -23,7 +23,7 @@ public class RangeTest {
         assertFalse("ต้องเป็นวงเล็บเปิดนะ", actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void
     หาตัวเลขเริ่มต้น() {
         MyRange range = new MyRange();
