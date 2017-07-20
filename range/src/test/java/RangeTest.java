@@ -31,7 +31,7 @@ public class RangeTest {
         assertEquals(1, actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void
     หาตัวเลขเริ่มต้น2() {
         MyRange range = new MyRange();
@@ -39,31 +39,32 @@ public class RangeTest {
         assertEquals(2, actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void
     หาตัวเลขเริ่มต้น3() {
         MyRange range = new MyRange();
         int actualResult = range.getFirstNumber("(1,5]");
-        assertEquals(2, actualResult);
+        assertEquals(1, actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void
     ตรวจสอบว่าเป็น_ก้ามปูปิด() {
         MyRange range = new MyRange();
         boolean actualResult = range.isก้ามปูปิด("[1,5]");
-        assertTrue("ต้องเป็นก้ามปูปิดนะ", actualResult);
+        //assertTrue("ต้องเป็นก้ามปูปิดนะ", actualResult);
+        assertTrue("]", actualResult);
     }
 
-    @Test @Ignore
+    @Test 
     public void
     ตรวจสอบว่าเป็น_วงเล็บปิด() {
         MyRange range = new MyRange();
         boolean actualResult = range.isก้ามปูปิด("[1,5)");
-        assertFalse("ต้องเป็นวงเล็บปิดนะ", actualResult);
+        assertFalse("]", actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void
     หาตัวเลขสุดท้าย() {
         MyRange range = new MyRange();
@@ -71,7 +72,7 @@ public class RangeTest {
         assertEquals(5, actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void
     หาตัวเลขสุดท้าย2() {
         MyRange range = new MyRange();
