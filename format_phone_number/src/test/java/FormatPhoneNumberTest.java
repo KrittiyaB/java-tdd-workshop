@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 public class FormatPhoneNumberTest {
 
 
-    @Test @Ignore
+    @Test
     public void removeNonDigit_with_dash() {
         FormatPhoneNumber formatPhoneNumber = new FormatPhoneNumber();
         String actualResult = formatPhoneNumber.removeNonDigit("00-44-4855558361");
