@@ -21,7 +21,7 @@ public class FizzBuzzTest {
         assertEquals(expectedResult, actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void should_say_Fizz_when_number_is_3() {
         String actualResult = fizzBuzz.say(3);
         String expectedResult = "Fizz";
