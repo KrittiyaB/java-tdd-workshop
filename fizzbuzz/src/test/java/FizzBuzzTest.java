@@ -63,7 +63,7 @@ public class FizzBuzzTest {
         assertEquals(expectedResult, actualResult);
     }
 
-    @Test @Ignore
+    @Test 
     public void should_say_Fizz_when_number_is_9() {
         String actualResult = fizzBuzz.say(9);
         String expectedResult = "Fizz";
