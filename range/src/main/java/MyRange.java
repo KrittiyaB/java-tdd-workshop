@@ -16,6 +16,9 @@ public class MyRange {
     }
 
     public boolean isก้ามปูเปิด(String input) {
+    	if(input.startsWith("[") ) {
+    		return true;
+    	}
         return false;
     }
 }
