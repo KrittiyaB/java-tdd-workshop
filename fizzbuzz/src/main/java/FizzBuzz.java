@@ -5,6 +5,8 @@ public class FizzBuzz {
     		return "Fizz";
     	}else if(input == 5 || input == 10) {
     		return "Buzz";
+    	}else if(input == 15) {
+    		return "FizzBuzz";
     	}
         return String.valueOf(input);
     }
