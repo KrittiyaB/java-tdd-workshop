@@ -12,7 +12,21 @@ public class FormatPhoneNumber {
     }
 
     public String solution(String input) {
-        return null;
+    	FormatPhoneNumber phone = new FormatPhoneNumber();
+    	String number = phone.removeNonDigit(input);
+    	int length = number.length();
+    	String resultFormat = "";
+    	
+    	for(int i=0; i<length; i++) {
+    		if(i>0 && i%3 == 0) {
+    			resultFormat += "-"+ number.charAt(i);
+    		}else {
+    			resultFormat += number.charAt(i);
+    		}
+    		
+    	}
+    	
+        return resultFormat;
     }
 
 }
