@@ -49,7 +49,7 @@ public class FizzBuzzTest {
         assertEquals(expectedResult, actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void should_say_7_when_number_is_7() {
         String actualResult = fizzBuzz.say(7);
         String expectedResult = "7";
