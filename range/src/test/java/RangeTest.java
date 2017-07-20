@@ -44,7 +44,7 @@ public class RangeTest {
     หาตัวเลขเริ่มต้น3() {
         MyRange range = new MyRange();
         int actualResult = range.getFirstNumber("(1,5]");
-        assertEquals(1, actualResult);
+        assertEquals(2, actualResult);
     }
 
     @Test
@@ -80,7 +80,7 @@ public class RangeTest {
         assertEquals(4, actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void final_problem() {
         MyRange range = new MyRange();
         assertEquals("12345", range.of("[1,5]"));
