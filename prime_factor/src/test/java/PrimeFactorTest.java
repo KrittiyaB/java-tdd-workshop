@@ -38,7 +38,7 @@ public class PrimeFactorTest {
         assertEquals(list(2, 3), primeFactor.of(6));
     }
 
-    @Test @Ignore
+    @Test
     public void should_return_2_2_2_when_number_is_8() {
         PrimeFactor primeFactor = new PrimeFactor();
         assertEquals(list(2, 2, 2), primeFactor.of(8));
