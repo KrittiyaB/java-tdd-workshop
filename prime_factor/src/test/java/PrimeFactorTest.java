@@ -44,13 +44,13 @@ public class PrimeFactorTest {
         assertEquals(list(2, 2, 2), primeFactor.of(8));
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_3_3_when_number_is_9() {
         PrimeFactor primeFactor = new PrimeFactor();
         assertEquals(list(3, 3), primeFactor.of(9));
     }
 
-    @Test @Ignore
+    @Test
     public void should_return_3_3_3_when_number_is_27() {
         PrimeFactor primeFactor = new PrimeFactor();
         assertEquals(list(3, 3, 3), primeFactor.of(27));
