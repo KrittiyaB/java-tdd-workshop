@@ -7,6 +7,17 @@ public class PrimeFactor {
     	
     	if(number == 2 || number == 3) {
     		list.add(number);
+    	}else {
+    		if(number%2 == 0) { //Even
+    			number = number/2;
+    			list.add(2);
+    			if(number == 2 || number == 3) {
+    				list.add(number);
+    			}
+    			
+    		}else { //Odd
+    			
+    		}
     	}
         return list;
     }

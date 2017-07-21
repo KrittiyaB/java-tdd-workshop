@@ -26,13 +26,13 @@ public class PrimeFactorTest {
         assertEquals(list(3), primeFactor.of(3));
     }
 
-    @Test @Ignore
+    @Test
     public void should_return_2_2_when_number_is_4() {
         PrimeFactor primeFactor = new PrimeFactor();
         assertEquals(list(2, 2), primeFactor.of(4));
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_2_3_when_number_is_6() {
         PrimeFactor primeFactor = new PrimeFactor();
         assertEquals(list(2, 3), primeFactor.of(6));
