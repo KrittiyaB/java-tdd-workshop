@@ -3,8 +3,9 @@ import java.util.List;
 
 public class PrimeFactor {
 
+	private List<Integer> list = new ArrayList<Integer>();
+
 	public List<Integer> of(int number) {
-		List<Integer> list = new ArrayList<Integer>();
 
 		if (number == 2 || number == 3) {
 			list.add(number);
@@ -16,13 +17,7 @@ public class PrimeFactor {
 				if (number == 2 || number == 3) {
 					list.add(number);
 				} else {
-					if (number % 2 == 0) {
-						number = number / 2;
-						list.add(number);
-						if (number == 2 || number == 3) {
-							list.add(number);
-						}
-					}
+					of(number);
 				}
 
 			} else { // Odd
