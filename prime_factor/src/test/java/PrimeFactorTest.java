@@ -55,8 +55,32 @@ public class PrimeFactorTest {
         PrimeFactor primeFactor = new PrimeFactor();
         assertEquals(list(3, 3, 3), primeFactor.of(27));
     }
+    
+    @Test
+    public void should_return_3_3_3_when_number_is_32() {
+        PrimeFactor primeFactor = new PrimeFactor();
+        assertEquals(list(2, 2, 2, 2, 2), primeFactor.of(32));
+    }
+    
+    @Test
+    public void should_return_3_3_3_when_number_is_18() {
+        PrimeFactor primeFactor = new PrimeFactor();
+        assertEquals(list(2, 3, 3), primeFactor.of(18));
+    }
+    
+    @Test
+    public void should_return_3_3_3_when_number_is_36() {
+        PrimeFactor primeFactor = new PrimeFactor();
+        assertEquals(list(2, 2, 3, 3), primeFactor.of(36));
+    }
+    
+    @Test
+    public void should_return_3_3_3_when_number_is_neg1() {
+        PrimeFactor primeFactor = new PrimeFactor();
+        assertEquals(list(), primeFactor.of(-1));
+    }
 
-
+    
     private List<Integer> list(int ... input) {
         List<Integer> list = new ArrayList<Integer>();
         for (int i: input) {

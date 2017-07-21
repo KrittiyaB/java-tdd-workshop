@@ -20,7 +20,7 @@ public class PrimeFactor {
 				} else {
 					of(number);
 				}
-				
+
 			} else { // Odd
 				number = number / 3;
 				list.add(3);
@@ -29,7 +29,6 @@ public class PrimeFactor {
 				} else {
 					of(number);
 				}
-				
 			}
 		}
 		return list;
