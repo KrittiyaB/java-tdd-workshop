@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 
 public class PrimeFactorTest {
 
-    @Test @Ignore
+    @Test
     public void should_return_empty_when_number_is_1() {
         PrimeFactor primeFactor = new PrimeFactor();
         assertEquals(list(), primeFactor.of(1));
