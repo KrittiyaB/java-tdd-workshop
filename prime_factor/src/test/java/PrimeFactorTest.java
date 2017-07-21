@@ -14,13 +14,13 @@ public class PrimeFactorTest {
         assertEquals(list(), primeFactor.of(1));
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_2_when_number_is_2() {
         PrimeFactor primeFactor = new PrimeFactor();
         assertEquals(list(2), primeFactor.of(2));
     }
 
-    @Test @Ignore
+    @Test 
     public void should_return_3_when_number_is_3() {
         PrimeFactor primeFactor = new PrimeFactor();
         assertEquals(list(3), primeFactor.of(3));
